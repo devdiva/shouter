@@ -1,7 +1,25 @@
 Shouter::Application.routes.draw do
-  get "shout/index"
+  #get "user/index"
+  # match "user/" => "user#index"
 
-  root :to => 'shout#index'
+  # get "user/show"
+
+  # get "user/edit"
+
+  # get "user/update"
+
+  # get "user/new"
+
+  # get "user/destroy"
+
+  # get "user/create"
+
+  resources :users
+  resources :shouts
+
+  # get "shout/index"
+
+  root :to => 'shouts#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
